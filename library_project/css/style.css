@@ -1,0 +1,438 @@
+header {
+    position: static;
+}
+
+/*login/signup forms*/
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container form {
+    width: 30%;
+    background: #a67d5b36;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 1px solid #ccc;
+}
+    
+.container .title {
+    color: #5a3925;
+    margin-bottom: 40px;
+}
+
+form .user-details .input-box {
+    margin: 15px 0;
+}
+
+.user-details .input-box input {
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.submit1 input {
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #5a3925;
+    color:white;
+    border-color: transparent;
+}
+
+.submit1 input:hover {
+    background-color:#a07f60;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.backbuttons {
+    text-align: center;
+    padding: 15px;
+}
+
+.backbuttons .details {
+    color: #5a3925;
+}
+
+.backbuttons .registrate {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.backbuttons .registrate:hover {
+    text-decoration: underline;
+}
+
+/*Add book page*/
+
+.section-addbook {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input,
+select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section-addbook input,
+.section-addbook select {
+    padding: 5px;
+}
+
+.section-addbook .format{
+    width: 100%;
+}
+
+.section-addbook .genres {
+    width: 83%;
+}
+
+.section-addbook .submit {
+    width: 100%;
+    padding: 10px;
+}
+
+.section-addbook .right {
+    padding-right: 2%;
+}
+
+.section-addbook .left {
+    text-align: justify;
+}
+
+/*Search page*/
+.search-book,
+.book-results {
+    padding: 20px;
+}
+
+.book-results a,
+.column a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-bar {
+    background: none;
+}
+
+.search-bar .submit,
+.book-page .submit,
+.section-addbook .submit {
+    background-color: #5a3925;
+    color: white;
+}
+
+.book-results .left {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.book-results .right {
+    width: 80%;
+    position: relative;
+}
+
+.book {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.book img,
+table img {
+    width: 100px;
+}
+
+.status {
+    position: absolute;
+    bottom:0;
+}
+
+/* Book page */
+
+.book-page,
+.join {
+    font-family: Copernicus,"Libre Baskerville",Georgia,serif;
+    padding: 20px;
+}
+
+.book-page img{
+    width: 200px;
+}
+
+.book-page .left,
+.column .left {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-page .right {
+    margin: 0 5%;
+}
+
+.book h1,
+.book p,
+.book h4,
+.book h3,
+.column h5,
+.column p {
+    margin: 0;
+}
+
+.book-page .book-title {
+    font-size: 22px;
+}
+
+.book-page .description {
+    text-align: justify;
+}
+
+.book-page h4 {
+    margin-top: 10px;
+}
+
+.book-page td {
+    padding-right: 15px;
+}
+
+.join-discussion {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.join {
+    font-size: 25px;
+    margin: 0;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column a:hover .underline,
+.my-books a:hover {
+    text-decoration: underline;
+}
+
+.inline {
+    font-family: Copernicus, "Libre Baskerville", Georgia, serif;
+    display: inline-block;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.column span {
+    font-size: 70px;
+}
+
+.column h5 {
+    font-size: 30px;
+}
+
+.fa-quote-left {
+    color: rgb(163, 116, 61);
+}
+
+.fa-comments {
+    color: rgb(138, 143, 178);
+}
+
+.fa-star {
+    color: rgb(161, 111, 131);
+}
+
+.fa-chevron-right {
+    font-size: 10px;
+}
+
+.disabled {
+    background-color: gray !important;
+    cursor: not-allowed;
+}
+
+.confirm_return {
+    border: 3px solid red;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+}
+
+.confirm_return h2,
+.confirm_return h3 {
+    color: red;
+}
+
+.confirm_return h2 {
+    margin: 0;
+}
+
+.confirm_return h3 {
+    margin-top: 0;
+}
+
+/*my-books page*/
+.my-books {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.my-books .table-head {
+    border-bottom: 1.5px solid black;
+}
+
+.my-books td {
+    text-align: center;
+    padding: 2% 0;
+}
+
+.my-books .table-data {
+    border-bottom: 1px solid gray;
+    padding: 5%;
+}
+
+/*about us page*/
+.about{
+    padding: 10px;
+}
+.about h1{
+    text-align: center;
+}
+.about p {
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.about img {
+    float: left;
+    margin: 5px;
+    margin-right: 20px;
+    width: 30%;
+    height: 25%;
+}
+/*location page*/
+.location{
+    margin: 20px; 
+    padding: 0 10%;
+}
+
+.location  h1{
+     text-align: center;
+}
+
+.location iframe {
+ margin-right: 10%;
+}
+
+.location p{
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.8;
+}
+/*all-events page*/
+.all-events{
+    margin: 10%;
+    padding-left:25%;
+}
+.all-events h2,
+.all-events p{
+    text-align: justify;
+
+}
+.all-events p{
+    font-size: 20px;
+}
+/*nothing found*/
+.nothing-found-img{
+     padding: 1%;
+     text-align: center;
+}
+.nothing-found-img img{
+ max-height: 200px ;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-addbook {
+        display: block;
+    }
+
+    .section-addbook .left {
+        padding: 5%;
+    }
+
+    .section-addbook .right {
+        float: none;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .location .left {
+        width: 100%;
+    }
+
+    .extended-information {
+        display: block;
+    }
+
+    .book .left {
+        margin-right: 10%;
+    }
+
+    .join-discussion {
+        display: block;
+    }
+
+    .join {
+        text-align: center;
+    }
+
+    .join-discussion .column,
+    .extended-information .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .confirm_return {
+        width: 90%;
+    }
+
+    .container form {
+        width: 80%;
+    }
+}
